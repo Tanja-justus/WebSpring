@@ -11,8 +11,9 @@ public class HelloWorldController {
     @GetMapping("/hello")
     public String sayHello() {
         return "Hello, World!";
-       // http://localhost:8080/api/hello
+        // http://localhost:8080/api/hello
     }
+
     // Hier wird die Pfadvariable {name} verwendet
     @GetMapping("/hello/{name}")
     public String sayHello(@PathVariable String name) {
